@@ -12,7 +12,7 @@ import { Runner } from '../../models/Runner'
 export class ControlsComponent implements OnInit {
 
   icons = { faPlay, faPause, faTrashAlt, faStopwatch }
-  playpause: object;
+  playpause: any;
   isRecording: boolean = false;
   interval;
   counter: number = 0;
