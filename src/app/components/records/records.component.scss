@@ -1,0 +1,51 @@
+.records {
+  &__li {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+    position: relative;
+    &:last-child {
+      border: 0;
+    }
+    &:hover {
+      .records__btn {
+        opacity: 1;
+      }
+    }
+  }
+  &__btn {
+    line-height: 35px;
+    background-color: var(--red);
+    padding: 0 8px;
+    color: var(--white);
+    opacity: 0.7;
+    transition: all 0.2s;
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+  &__time {
+    font-size: 1.7rem;
+    position: relative;
+    z-index: 1;
+  }
+  &__time--bg {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  .dots,
+  .dot {
+    position: absolute;
+    top: -1px;
+  }
+  .dots {
+    left: 21px;
+  }
+  .dot {
+    right: 21px;
+  }
+}

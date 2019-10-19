@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+// Base: animations, base, typography, and utilies.
+@import "./assets/styles/base/var.scss";
+@import "./assets/styles/base/reset.scss";
+@import "./assets/styles/base/utilies.scss";
+@import "./assets/styles/base/typography.scss";
+@import "./assets/styles/base/animations.scss";
+
+// Layout: Header, footer, grid, navigation
+@import "./assets/styles/layout/main.scss";
+
+// Pages: Have a single scss for each specific page
+
+// Vendor: handles 3rd party css

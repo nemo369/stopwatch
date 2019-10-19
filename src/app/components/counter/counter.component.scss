@@ -1,0 +1,43 @@
+.counter {
+  margin-top: 1.5vh;
+  border-radius: 12px 12px 0px 0px;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  position: relative;
+  background-color: var(--lightblack);
+  box-shadow: inset 0 0 27px #000000;
+  font-size: 3.5rem;
+  font-variant-numeric: tabular-nums;
+  * {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.lcd-front {
+  position: relative;
+  z-index: 1;
+}
+.lcd-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  span {
+    opacity: 0.1;
+  }
+  .no-opcaity {
+    display: inline-block;
+    position: absolute;
+    width: 6px;
+    opacity: 1;
+    &.first-child {
+      transform: translate(-0.875rem, -0.25rem);
+    }
+    &.last-child {
+      transform: translate(-0.875rem, -0.25rem);
+    }
+  }
+}

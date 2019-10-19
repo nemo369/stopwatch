@@ -1,0 +1,13 @@
+<app-counter [counter]="counter" [isRecording]="isRecording"></app-counter>
+<section class="controls">
+  <button (click)="toglleCounter()" class="btn btn--wide">
+    <fa-icon [icon]="playpause.icon"></fa-icon>
+    <span>{{ playpause.text }}</span>
+  </button>
+  <button (click)="setRecord()" class="btn btn--middle">
+    <fa-icon [icon]="icons.faStopwatch"></fa-icon>
+  </button>
+  <button (click)="clearCounter()" class="btn">
+    <fa-icon [icon]="icons.faTrashAlt"></fa-icon>
+  </button>
+</section>

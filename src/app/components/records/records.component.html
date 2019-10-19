@@ -1,0 +1,18 @@
+<ul class="records">
+  <li *ngFor="let record of records; let i = index" class="records__li">
+    <div class="records__time">
+      <span>{{ record | count: "min" }}</span>
+      <small class="dots">:</small>
+      <span>{{ record | count: "sec" }}</span>
+      <small class="dot">.</small>
+      <span>{{ record | count: "mil" }}</span>
+    </div>
+    <div class="records__time records__time--bg">
+      <span>88</span>
+      <span>88</span>
+      <span>88</span>
+    </div>
+
+    <button class="records__btn" (click)="deleteRecord(i)">REMOVE</button>
+  </li>
+</ul>

@@ -1,0 +1,34 @@
+.controls {
+  height: 75px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 12px 12px;
+  margin-bottom: 1rem;
+  .btn {
+    text-align: center;
+    flex: 1 0 auto;
+    font-size: 2rem;
+    height: 100%;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &--wide {
+      flex: 5 0 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .ng-fa-icon {
+        margin-right: 14px;
+        font-size: 1.25rem;
+      }
+    }
+    &--middle {
+      border: 1px solid #000;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+}

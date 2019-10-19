@@ -1,0 +1,18 @@
+<section class="counter green-color">
+  <div class="lcd-back">
+    <span>88</span>
+    <span [ngClass]="{ blink: isRecording }" class="no-opcaity first-child">
+      :
+    </span>
+    <span>88</span>
+    <span [ngClass]="{ blink: isRecording }" class="no-opcaity last-child">
+      .
+    </span>
+    <span>88</span>
+  </div>
+  <div class="lcd-front">
+    <span>{{ counter | count: "min" }}</span>
+    <span>{{ counter | count: "sec" }}</span>
+    <span>{{ counter | count: "mil" }}</span>
+  </div>
+</section>
