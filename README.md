@@ -3,6 +3,8 @@
 This project is a Frontend HTML5/CSS/Angular Developer test task.
 Main goal is “Implement stopwatch application”
 
+You can find *Live Version* of this app using[netlify](https://sleepy-jackson-e6e79a.netlify.com/)
+
 # Requirements:
 1. The task must be completed by 100%. No “progress” is accepted.
 2. Must be done with Angular.5.
